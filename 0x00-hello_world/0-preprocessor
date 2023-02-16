@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from the user
-read -p "Enter the C file name: " CFILE
-
-# Run the C file through the preprocessor and save the result into "c"
-cpp $CFILE > c
-
-echo "Preprocessed file saved to c"
-
+cpp "$CFILE" > c
